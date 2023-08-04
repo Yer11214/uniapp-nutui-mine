@@ -1,0 +1,25 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+	],
+	
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"nut-(.*)?-(.*)": "@/uni_modules/nutui-uni/components/nutui-uni/components/$1$2/$1$2.vue",
+			"nut-(.*)": "@/uni_modules/nutui-uni/components/nutui-uni/components/$1/$1.vue"
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
